@@ -1,24 +1,44 @@
 .jumbotron
   .container
-    %h1 Test title
-    %p This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.
-    %p
-      %a.btn.btn-primary.btn-lg{:href => "#", :role => "button"} Learn more »
+    %h1 Harvard Admissions for UK Students
+    %p Welcome to the online portal for UK students interested in applying to Harvard.  We hope this site will be useful to you as a source of knowledge about Harvard, the application process unique to international students, and general information about going to college in the United States.  Explore the links below!
+    / %p
+    /   %a.btn.btn-primary.btn-lg{:href => "#", :role => "button"} Learn more »
+.carousel.slide{"data-ride" => "carousel"}
+  .carousel-inner{:role => "listbox"}
+    .item.active
+      %img.first-slide{:alt => "First slide", :src => "https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xpf1/t31.0-8/10987736_10152563018681607_4291223189725048347_o.jpg"}/
+      .container
+        .carousel-caption
+          %h1 A global institution
+
+    .item
+      %img.second-slide{:alt => "Second slide", :src => "https://scontent-lhr.xx.fbcdn.net/hphotos-xft1/t31.0-8/10679844_10152328563821607_3974796259932773557_o.jpg"}/
+      .container
+        .carousel-caption
+          %h1 Unparalleled opportunities
+          
+    .item
+      %img.third-slide{:alt => "Third slide", :src => "https://scontent-lhr.xx.fbcdn.net/hphotos-xfp1/t31.0-8/10608698_10152244437901607_558710098211143581_o.jpg"}/
+      .container
+        .carousel-caption
+          %h1 Broaden your horizons
+    
 .container
   .row
     .col-md-4
-      %h2 Heading
+      %h2 Applying from the UK
+      %p sdlkfjsd;lfkjsdlfkjsdlkfjsdlkfjsdlkfjsdlkfj
+      %p
+        %a.btn.btn-default{:href => "applying", :role => "button"} View details »
+    .col-md-4
+      %h2 Studying in the US
       %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
       %p
-        %a.btn.btn-default{:href => "#", :role => "button"} View details »
+        %a.btn.btn-default{:href => "studying", :role => "button"} View details »
     .col-md-4
-      %h2 Heading
-      %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      %p
-        %a.btn.btn-default{:href => "#", :role => "button"} View details »
-    .col-md-4
-      %h2 Heading
+      %h2 Funding & Financial Aid
       %p Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
       %p
-        %a.btn.btn-default{:href => "#", :role => "button"} View details »
+        %a.btn.btn-default{:href => "financial_aid", :role => "button"} View details »
   %hr/

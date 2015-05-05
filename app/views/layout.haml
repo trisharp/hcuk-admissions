@@ -8,27 +8,71 @@
     %meta{:content => "", :name => "description"}/
     %meta{:content => "", :name => "author"}/
     %link{:href => "../../favicon.ico", :rel => "icon"}/
-    %title Jumbotron Template for Bootstrap
+    %title Harvard UK Admissions
     / Bootstrap core CSS
-    %link{:href => "/css/bootstrap.min.css", :rel => "stylesheet"}/
+    %link{:href => "/css/bootstrap.css", :rel => "stylesheet"}/
     / Custom styles for this template
     %link{:href => "/css/jumbotron.css", :rel => "stylesheet"}/
+    %link{:href => "/css/simple-sidebar.css", :rel => "stylesheet"}/
+    %link{:href => "/css/carousel.css", :rel => "stylesheet"}/
+
   %body
     %nav.navbar.navbar-inverse.navbar-fixed-top
       .container
         .navbar-header
-          %button.navbar-toggle.collapsed{"aria-controls" => "navbar", "aria-expanded" => "false", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
-            %span.sr-only Toggle navigation
-            %span.icon-bar
-            %span.icon-bar
-            %span.icon-bar
-          %a.navbar-brand{:href => "#"} Project name
-        #navbar.navbar-collapse.collapse
-          %form.navbar-form.navbar-right
+          / %button.navbar-toggle.collapsed{"aria-controls" => "navbar", "aria-expanded" => "false", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
+          /   %span.sr-only Toggle navigation
+          /   %span.icon-bar sdfsdfsd
+          /   %span.icon-bar
+          /   %span.icon-bar
+          %a.navbar-brand{:href => "/"} HCUK Admissions
+        .collapse.navbar-collapse
+          %ul.nav.navbar-nav
+            %li.dropdown
+              %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" => "dropdown", :href => "applying", :role => "button"}
+                Applying
+                %span.caret
+              %ul.dropdown-menu{:role => "menu"}
+                %li
+                  %a{:href => "#"} Timeline
+                %li
+                  %a{:href => "#"} Assembling your application
+                %li
+                  %a{:href => "#"} Interview
+                %li.divider
+                %li
+                  %a{:href => "#"} SAT Tests F.A.Q.
+            %li.dropdown
+              %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" => "dropdown", :href => "studying", :role => "button"}
+                Studying in the US
+                %span.caret
+              %ul.dropdown-menu{:role => "menu"}
+                %li
+                  %a{:href => "#"} Action
+                %li
+                  %a{:href => "#"} Another action
+                %li
+                  %a{:href => "#"} Something else here
+                %li.divider
+                %li
+                  %a{:href => "#"} Separated link
+            %li.dropdown
+              %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" => "dropdown", :href => "financial_aid", :role => "button"}
+                Funding & Financial Aid
+                %span.caret
+              %ul.dropdown-menu{:role => "menu"}
+                %li
+                  %a{:href => "#"} Important Dates
+            %li
+              %a{:href => "#"} Helpful links
+            %li
+              %a{:href => "#"} Contact us
     #content 
       =yield
+    #header
 
   %footer
-    %p © Company 2014
+    / %p © Trisha Paul 2015
     %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"}
     %script{:src => "/js/bootstrap.min.js"}
+    %script{:src => "/js/hovernav.js"}
